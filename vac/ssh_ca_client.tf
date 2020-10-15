@@ -96,9 +96,6 @@ resource "vault_generic_endpoint" "client_role" {
     "allow_user_certificates": true,
     "allowed_extensions": "permit-pty,permit-port-forwarding",
     "allowed_users": "vlt_user",
-    "default_critical_options": {
-      "source-address": "210.221.64.207/32"
-    },
     "default_extensions": [
       {
         "permit-pty": ""
