@@ -37,6 +37,7 @@ resource "ncloud_public_ip" "cn_client_public_ip" {
   server_instance_no = ncloud_server.cn_client.id
 }
 
+# 데모 시 사용할 사용자 계정 추가
 resource "null_resource" "cn_client_provisioner" {
   provisioner "remote-exec" {
     inline = [
