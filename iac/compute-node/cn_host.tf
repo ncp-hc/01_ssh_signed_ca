@@ -34,7 +34,9 @@ resource "ncloud_public_ip" "cn_host_public_ip" {
   server_instance_no = ncloud_server.cn_host.id
 }
 
+
 resource "null_resource" "cn_host_provisioner" {
+# 데모 시 사용할 사용자 계정 추가
   provisioner "remote-exec" {
     inline = [
       "groupadd mygrp",
